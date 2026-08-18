@@ -1,45 +1,65 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+:root {
+    --ink: #eef3e6;
+    --forest: #173f32;
+    --moss: #758d61;
+    --cream: #eef3e6;
+    --orange: #d9683b;
+    --line: rgba(238, 243, 230, 0.28);
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
-}
-
-.App {
-    text-align: center;
-}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-.heart {
-    color: #ff0000;
-}
-
-.small {
-    font-size: 0.75rem;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--forest); font-family: Georgia, "Times New Roman", serif; -webkit-font-smoothing: antialiased; }
+.site-header { align-items: center; display: flex; justify-content: space-between; padding: 28px 6vw; position: absolute; width: 100%; z-index: 2; }
+.wordmark, nav a { color: var(--cream); text-decoration: none; }
+.wordmark { font-size: 1.5rem; font-weight: bold; letter-spacing: .04em; }
+.wordmark span, footer span:first-child { color: var(--orange); }
+nav { display: flex; gap: 28px; font: .75rem Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; transform: translateY(10px); }
+nav a { opacity: .82; }
+nav a:hover, nav a:focus { opacity: 1; }
+.hero { background: linear-gradient(90deg, rgba(11, 39, 29, .78), rgba(11, 39, 29, .3)), url("https://img.magnific.com/premium-photo/irish-flag-with-shamrock-center_1123971-1726.jpg?semt=ais_hybrid&w=740&q=80") center/cover; color: var(--cream); min-height: 720px; padding: 190px 12vw 110px; text-align: center; }
+.eyebrow { color: var(--orange); font: bold .7rem Arial, sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+h1 { font-size: clamp(3.6rem, 8vw, 8rem); font-weight: normal; letter-spacing: -.04em; line-height: .88; margin: 25px auto; max-width: 850px; text-align: center; }
+h1 em { color: #c6d18e; font-style: italic; }
+.intro { font-size: 1.2rem; line-height: 1.55; margin-left: auto; margin-right: auto; max-width: 420px; text-align: center; }
+.button { border-bottom: 1px solid var(--orange); color: var(--cream); display: flex; font: bold .75rem Arial, sans-serif; gap: 24px; letter-spacing: .13em; margin: 25px auto 0; padding: 0 0 12px; text-decoration: none; text-transform: uppercase; width: max-content; }
+.button span { color: var(--orange); font-size: 1.1rem; }
+.gallery-section { margin: 0 auto; max-width: 1240px; padding: 105px 6vw 120px; }
+.section-heading { align-items: end; background: linear-gradient(90deg, rgba(11, 39, 29, .88), rgba(11, 39, 29, .42)), url("https://thumbs.dreamstime.com/b/lush-green-hills-ireland-sky-nature-images-294360212.jpg") center/cover; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; margin-bottom: 38px; padding: 48px 40px 28px; }
+h2 { font-size: clamp(2.2rem, 5vw, 4.5rem); font-weight: normal; letter-spacing: -.04em; line-height: .9; margin: 10px 0 0; }
+.section-heading h2 em { color: #c6d18e; font-style: italic; }
+.section-note { font: .7rem Arial, sans-serif; letter-spacing: .12em; margin: 0 0 4px; text-transform: uppercase; }
+.gallery { display: grid; gap: 34px 22px; grid-template-columns: repeat(3, 1fr); }
+.gallery-card { margin: 0; }
+.gallery-card img { aspect-ratio: 4 / 5; background: var(--moss); display: block; object-fit: cover; width: 100%; }
+.gallery-card.featured img, .gallery-card.wide img { aspect-ratio: 4 / 5; }
+.food-section { border-top: 1px solid var(--line); display: grid; gap: 70px; grid-template-columns: minmax(220px, .8fr) 1.2fr; margin: 0 auto; max-width: 1240px; padding: 100px 6vw 120px; }
+.food-heading h2 { margin-bottom: 28px; }
+.food-heading h2 em { color: #c6d18e; font-style: italic; }
+.food-heading > p:last-child { line-height: 1.6; max-width: 310px; }
+.food-list { display: grid; grid-template-columns: repeat(2, 1fr); }
+.food-list article { border-top: 1px solid var(--line); min-height: 190px; padding: 18px 24px 24px 0; }
+.food-list article:nth-child(even) { border-left: 1px solid var(--line); padding-left: 24px; }
+.food-list span { color: var(--orange); font: .65rem Arial, sans-serif; letter-spacing: .08em; }
+.food-list h3 { font-size: 1.45rem; font-weight: normal; margin: 26px 0 10px; }
+.food-list p { color: #b9c8a8; line-height: 1.5; margin: 0; max-width: 230px; }
+figcaption { display: grid; gap: 5px; grid-template-columns: 30px 1fr; padding-top: 13px; }
+figcaption span, figcaption small { color: #b9c8a8; font: .65rem Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+figcaption strong { font-size: 1.15rem; font-weight: normal; }
+figcaption small { grid-column: 2; }
+footer { border-top: 1px solid var(--line); display: flex; font: .7rem Arial, sans-serif; justify-content: space-between; letter-spacing: .1em; margin: 0 6vw; padding: 25px 0; text-transform: uppercase; }
+footer span:first-child { font: bold 1rem Georgia, serif; letter-spacing: .04em; text-transform: none; }
+@media (max-width: 700px) {
+    .site-header { flex-wrap: wrap; gap: 14px; padding: 22px 7vw; }
+    nav { font-size: .65rem; gap: 14px; }
+    .hero { min-height: 650px; padding: 160px 7vw 90px; }
+    h1 { font-size: clamp(2.8rem, 15vw, 4.5rem); max-width: 100%; overflow-wrap: break-word; }
+    .gallery-section { padding: 75px 7vw 80px; }
+    .food-section { display: block; padding: 75px 7vw 80px; }
+    .food-heading { margin-bottom: 55px; }
+    .food-list article { min-height: 170px; }
+    .section-heading { align-items: start; display: block; }
+    .section-note { margin-top: 24px; }
+    .gallery { gap: 30px 14px; grid-template-columns: repeat(2, 1fr); }
+    footer { margin: 0 7vw; }
 }

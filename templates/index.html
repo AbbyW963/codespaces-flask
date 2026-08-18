@@ -1,19 +1,141 @@
+<!doctype html>
+<html lang="en">
 <head>
-    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover Ireland</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
+</head>
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
-    </div>
-</body>
+    <header class="site-header">
+        <nav aria-label="Main navigation">
+            <a href="#gallery">Explore</a>
+            <a href="#about">About Ireland</a>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero" id="about">
+            <p class="eyebrow">A field guide to the Emerald Isle</p>
+            <h1>Discover<br><em>Ireland.</em></h1>
+            <p class="intro">Explore Ireland's rolling green hills, rich culture, generous food, and drinks best shared with good company.</p>
+            <a class="button" href="#gallery">Explore Ireland <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Start here</p>
+                    <h2 id="gallery-title">Ireland, where the<br><em>land</em> runs wild.</h2>
+                    <p class="intro">Gorgeous Irish coastlines, rolling green hills, old stone, bright cities, and the kind of welcome that makes a detour feel like the plan.</p>
+                </div>
+                <p class="section-note">10 views across Ireland</p>
+            </div>
+            <div class="gallery">
+                <figure class="gallery-card featured">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXQnZErW_9_hAmz81tzzBa4qeJd1aAUrOWViJkvWLxg&amp;s=10" alt="Green Irish landscape" loading="eager">
+                    <figcaption><span>01</span><strong>Open country</strong><small>West coast · cliffs and weather</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQ-D0klIgBACGL20VLdk09ECtD_mrUOEbjdawDTMcnQ&amp;s=10" alt="View across Ireland" loading="lazy">
+                    <figcaption><span>02</span><strong>Wild Atlantic Way</strong><small>Everywhere · room to breathe</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGlMN_t6OwlaY1lrlQYO4k9X5noUT_iPd_dtjGF9nZg&amp;s=10" alt="Irish travel destination" loading="lazy">
+                    <figcaption><span>03</span><strong>Take the scenic route</strong><small>Southwest · no rush required</small></figcaption>
+                </figure>
+                <figure class="gallery-card wide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4GSCjXELdAhEmplEUMLzsLoKjXdHCmu-RiPXbALsCA&amp;s=10" alt="Must-see spot in Ireland" loading="lazy">
+                    <figcaption><span>04</span><strong>Stone, sea, story</strong><small>North and west · the good old stuff</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNKrBMuolvdjG2FrgP1bohf8_81Xi05KtPJ1x0Xa44g&amp;s=10" alt="Irish city street" loading="lazy">
+                    <figcaption><span>05</span><strong>City lights</strong><small>Dublin · Cork · Galway</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0dnkSPd7hIcwJ4SYrAJdclpza-lOR76DrBdWM-Voq2A&amp;s=10" alt="Historical sight in Ireland" loading="lazy">
+                    <figcaption><span>06</span><strong>Find your quiet</strong><small>South · softer edges</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXYRcykSLNdpW2CWRO9ZXozBgd_UepKyazUmvOnnNaBg&amp;s=10" alt="Beautiful place in Ireland" loading="lazy">
+                    <figcaption><span>07</span><strong>Old stories</strong><small>Across Ireland · history in stone</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvGexodjCSLacesOhI8GP6VTzHjVgwpe5KbvGkAXcMiA&amp;s=10" alt="Cork in Ireland" loading="lazy">
+                    <figcaption><span>08</span><strong>Cork Water</strong><small>South · bright and lived-in</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwQIgrSEPAapJUM29p3sLaT1f2etq_F7w4H2_Inazew&amp;s=10" alt="Bridge over a green Irish landscape" loading="lazy">
+                    <figcaption><span>09</span><strong>Riverside Bridge</strong><small>Ireland · quiet crossings</small></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="https://media.istockphoto.com/id/1436677442/photo/ladies-view-in-county-kerry-ireland.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=uCBHJ6E4OqkNeox8uo2hCwowBOP9dBW_BZD_tJmZtdQ%3D" alt="Ladies View in County Kerry, Ireland" loading="lazy">
+                    <figcaption><span>10</span><strong>County Kerry</strong><small>Southwest · wide-open views</small></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="food-section" id="food" aria-labelledby="food-title">
+            <div class="food-heading">
+                <p class="eyebrow">Taste of Ireland</p>
+                <h2 id="food-title">Good food,<br><em>good company.</em></h2>
+                <p>Irish food is warm, generous, and made for lingering at the table. Start with something simple and stay for one more cup.</p>
+            </div>
+            <div class="food-list">
+                <article>
+                    <span>01</span>
+                    <h3>Soda bread</h3>
+                    <p>Golden-crusted, hearty, and best served warm with butter.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Irish stew</h3>
+                    <p>A comforting bowl of slow-cooked meat, potatoes, and rich broth.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Fresh seafood</h3>
+                    <p>Oysters, salmon, and mussels gathered from Ireland's Atlantic coast.</p>
+                </article>
+                <article>
+                    <span>04</span>
+                    <h3>Colcannon</h3>
+                    <p>Creamy mashed potatoes mixed with cabbage, kale, and plenty of butter.</p>
+                </article>
+                <article>
+                    <span>05</span>
+                    <h3>Boxty</h3>
+                    <p>A traditional Irish potato pancake, crisp at the edges and soft inside.</p>
+                </article>
+                <article>
+                    <span>06</span>
+                    <h3>Apple tart</h3>
+                    <p>A warm, homely dessert made with Irish apples and served with cream.</p>
+                </article>
+                <article>
+                    <span>07</span>
+                    <h3>Irish tea</h3>
+                    <p>Strong black tea, usually served with milk, conversation, and something sweet.</p>
+                </article>
+                <article>
+                    <span>08</span>
+                    <h3>Irish stout</h3>
+                    <p>Dark, smooth, and rich, with a creamy pour made for slow evenings.</p>
+                </article>
+                <article>
+                    <span>09</span>
+                    <h3>Irish whiskey</h3>
+                    <p>A smooth, golden spirit enjoyed neat, over ice, or in a classic drink.</p>
+                </article>
+                <article>
+                    <span>10</span>
+                    <h3>Irish cider</h3>
+                    <p>Fresh, crisp, and lightly sparkling, made from locally grown apples.</p>
+                </article>
+            </div>
+        </section>
+</main>
+
+    <footer><span>Made for wandering</span></footer>
+</body>
 </html>
