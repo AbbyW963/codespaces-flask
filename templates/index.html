@@ -16,10 +16,21 @@
 
     <main>
         <section class="hero" id="about">
-            <p class="eyebrow">A field guide to the Emerald Isle</p>
-            <h1>Discover<br><em>Ireland.</em></h1>
-            <p class="intro">Explore Ireland's rolling green hills, rich culture, generous food, and drinks best shared with good company.</p>
-            <a class="button" href="#gallery">Explore Ireland <span aria-hidden="true">↓</span></a>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">A field guide to the Emerald Isle</p>
+                    <h1>Discover<br><em>Ireland.</em></h1>
+                    <p class="intro">Explore Ireland's rolling green hills, rich culture, generous food, and drinks best shared with good company.</p>
+                </div>
+                <nav class="contents" aria-label="Table of contents">
+                    <span>Contents</span>
+                    <a href="#gallery">01 / Landscapes</a>
+                    <a href="#places">02 / Places to visit</a>
+                    <a href="#food">03 / Food and drink</a>
+                    <a href="#facts">04 / Ireland facts</a>
+                    <a href="#phrases">05 / Famous Irish quotes</a>
+                </nav>
+            </div>
         </section>
 
         <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
@@ -75,62 +86,297 @@
             </div>
         </section>
 
+        <section class="places-section" id="places" aria-labelledby="places-title">
+            <div class="places-intro">
+                <p class="eyebrow">Take the long way</p>
+                <h2 id="places-title">Places worth<br><em>the detour.</em></h2>
+                <p>From Atlantic cliffs to bright city streets, Ireland rewards anyone willing to leave room for one more stop.</p>
+            </div>
+            <div class="places-list">
+                <article>
+                    <span>01</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqca9pF3DIASEDjxRMQ-_hoqSu8_Eg8Wlw8SqYgWGwOw&amp;s=10" target="_blank" rel="noopener noreferrer">Cliffs of Moher</a></h3>
+                        <p>Stand above the Atlantic on the dramatic west coast, where wind and sea do most of the talking.</p>
+                    </div>
+                    <small>County Clare</small>
+                </article>
+                <article>
+                    <span>02</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFi6q13vApJLKyn42f_AYAQ08sOG601LI6SdS4LlCyLw&amp;s=10" target="_blank" rel="noopener noreferrer">Galway</a></h3>
+                        <p>A lively, walkable city filled with music, colorful streets, and easy access to Connemara.</p>
+                    </div>
+                    <small>West coast</small>
+                </article>
+                <article>
+                    <span>03</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIv0UrcE5zQBY3GsGWdSUeVSWNK9JPRinQOJdLH3eQg&amp;s=10" target="_blank" rel="noopener noreferrer">Killarney</a></h3>
+                        <p>Explore lakes, forests, and mountain roads in one of Ireland's most beautiful national parks.</p>
+                    </div>
+                    <small>County Kerry</small>
+                </article>
+                <article>
+                    <span>04</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUJQ6d4YUHmc7fBS0lXfTMKTT6m4Uvh2F97hkTVek8A&amp;s=10" target="_blank" rel="noopener noreferrer">Dublin</a></h3>
+                        <p>Spend a day between Georgian squares, old bookshops, riverside walks, and welcoming pubs.</p>
+                    </div>
+                    <small>East coast</small>
+                </article>
+                <article>
+                    <span>05</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQ645imlZML7MZ5Ch23jUkUDmJT2Q-XCWEDQgiS4xwg&amp;s=10" target="_blank" rel="noopener noreferrer">Giant's Causeway</a></h3>
+                        <p>Follow the coast to a surreal field of hexagonal basalt columns shaped by ancient volcanic activity.</p>
+                    </div>
+                    <small>County Antrim</small>
+                </article>
+                <article>
+                    <span>06</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNyPlua1PzKIut0nvmwo7s3X9cMVutYOudvNkk7DxZQ&amp;s=10" target="_blank" rel="noopener noreferrer">Dingle Peninsula</a></h3>
+                        <p>Wind along narrow coastal roads past beaches, stone walls, and bright villages.</p>
+                    </div>
+                    <small>County Kerry</small>
+                </article>
+                <article>
+                    <span>07</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0jcaNRRZYy0o2i-i_IRenJatWXSBnhj3sX-_G6bjGtw&amp;s=10" target="_blank" rel="noopener noreferrer">Blarney Castle</a></h3>
+                        <p>Wander through woodland gardens and visit the castle said to hold the famous Blarney Stone.</p>
+                    </div>
+                    <small>County Cork</small>
+                </article>
+                <article>
+                    <span>08</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0Qm5Vn_F5M5Pn4f4gP4TOaUtzaZzxBQXG6BMkgHwzg&amp;s=10" target="_blank" rel="noopener noreferrer">Connemara</a></h3>
+                        <p>Discover bogs, rugged mountains, quiet lakes, and some of Ireland's wildest scenery.</p>
+                    </div>
+                    <small>County Galway</small>
+                </article>
+                <article>
+                    <span>09</span>
+                    <div>
+                        <h3><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNKJOgPzqVOBNR-x2Hyd4JBt_vTWdYPfoUhjbnBWDI4g&amp;s=10" target="_blank" rel="noopener noreferrer">Waterford Greenway</a></h3>
+                        <p>Cycle or walk a former railway line through viaducts, valleys, and coastal countryside.</p>
+                    </div>
+                    <small>County Waterford</small>
+                </article>
+            </div>
+        </section>
+
         <section class="food-section" id="food" aria-labelledby="food-title">
             <div class="food-heading">
                 <p class="eyebrow">Taste of Ireland</p>
                 <h2 id="food-title">Good food,<br><em>good company.</em></h2>
                 <p>Irish food is warm, generous, and made for lingering at the table. Start with something simple and stay for one more cup.</p>
+                <div class="food-heading-images">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfQ3-Jr3j-svcLArYt-lbj2Ge1Lc6rrIVxiDczk1YS5Q&amp;s=10" alt="Irish food" loading="lazy">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeyv1YctsI9h7jFy64mttSGQRakAKdJOLq_BzWWW4fA&amp;s=10" alt="Irish beverage" loading="lazy">
+                </div>
             </div>
             <div class="food-list">
                 <article>
                     <span>01</span>
-                    <h3>Soda bread</h3>
+                    <h3><a href="https://www.allrecipes.com/recipe/6750/irish-soda-bread-i/" target="_blank" rel="noopener noreferrer">Soda bread</a></h3>
                     <p>Golden-crusted, hearty, and best served warm with butter.</p>
                 </article>
                 <article>
                     <span>02</span>
-                    <h3>Irish stew</h3>
+                    <h3><a href="https://www.allrecipes.com/recipe/100292/irish-stew/" target="_blank" rel="noopener noreferrer">Irish stew</a></h3>
                     <p>A comforting bowl of slow-cooked meat, potatoes, and rich broth.</p>
                 </article>
                 <article>
                     <span>03</span>
-                    <h3>Fresh seafood</h3>
-                    <p>Oysters, salmon, and mussels gathered from Ireland's Atlantic coast.</p>
+                    <h3><a href="https://www.allrecipes.com/recipe/220519/irish-shepherds-pie/" target="_blank" rel="noopener noreferrer">Shepherd's pie</a></h3>
+                    <p>A hearty baked dish of savory meat, vegetables, and creamy mashed potatoes.</p>
                 </article>
                 <article>
                     <span>04</span>
-                    <h3>Colcannon</h3>
+                    <h3><a href="https://www.allrecipes.com/recipe/213339/easy-irish-colcannon/" target="_blank" rel="noopener noreferrer">Colcannon</a></h3>
                     <p>Creamy mashed potatoes mixed with cabbage, kale, and plenty of butter.</p>
                 </article>
                 <article>
                     <span>05</span>
-                    <h3>Boxty</h3>
+                    <h3><a href="https://www.allrecipes.com/recipe/161679/irish-boxty/" target="_blank" rel="noopener noreferrer">Boxty</a></h3>
                     <p>A traditional Irish potato pancake, crisp at the edges and soft inside.</p>
                 </article>
                 <article>
                     <span>06</span>
-                    <h3>Apple tart</h3>
+                    <h3><a href="https://bakingamoment.com/apple-tart/" target="_blank" rel="noopener noreferrer">Apple tart</a></h3>
                     <p>A warm, homely dessert made with Irish apples and served with cream.</p>
                 </article>
                 <article>
                     <span>07</span>
-                    <h3>Irish tea</h3>
-                    <p>Strong black tea, usually served with milk, conversation, and something sweet.</p>
+                    <h3><a href="https://www.allrecipes.com/article/classic-irish-coffee-recipe/" target="_blank" rel="noopener noreferrer">Irish coffee</a></h3>
+                    <p>Hot coffee blended with Irish whiskey, sugar, and a soft layer of lightly whipped cream.</p>
                 </article>
                 <article>
                     <span>08</span>
-                    <h3>Irish stout</h3>
-                    <p>Dark, smooth, and rich, with a creamy pour made for slow evenings.</p>
+                    <h3><a href="https://www.allrecipes.com/recipe/23534/original-irish-cream/" target="_blank" rel="noopener noreferrer">Irish Cream</a></h3>
+                    <p>A smooth, creamy Irish liqueur with rich notes of coffee, cocoa, and whiskey.</p>
                 </article>
                 <article>
                     <span>09</span>
-                    <h3>Irish whiskey</h3>
-                    <p>A smooth, golden spirit enjoyed neat, over ice, or in a classic drink.</p>
+                    <h3><a href="https://www.allrecipes.com/recipe/156997/hot-irish-whiskey/" target="_blank" rel="noopener noreferrer">Hot Irish Whiskey</a></h3>
+                    <p>A warming blend of Irish whiskey, hot water, sugar, and a bright slice of lemon.</p>
                 </article>
                 <article>
                     <span>10</span>
-                    <h3>Irish cider</h3>
+                    <h3><a href="https://www.justapinch.com/recipes/drink/cocktail/irish-cider.html" target="_blank" rel="noopener noreferrer">Irish cider</a></h3>
                     <p>Fresh, crisp, and lightly sparkling, made from locally grown apples.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="facts-section" id="facts" aria-labelledby="facts-title">
+            <div class="facts-heading">
+                <p class="eyebrow">A little more to know</p>
+                <h2 id="facts-title">Ireland<br><em>in brief.</em></h2>
+            </div>
+            <div class="facts-list">
+                <article>
+                    <span>01</span>
+                    <h3>Capital city</h3>
+                    <p>Dublin is Ireland's capital and largest city, set along the east coast.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Two languages</h3>
+                    <p>Irish and English are the official languages of the Republic of Ireland.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Currency</h3>
+                    <p>The euro is the currency used in the Republic of Ireland.</p>
+                </article>
+                <article>
+                    <span>04</span>
+                    <h3>National day</h3>
+                    <p>St. Patrick's Day is celebrated each year on March 17.</p>
+                </article>
+                <article>
+                    <span>05</span>
+                    <h3>Ancient passage tomb</h3>
+                    <p>Newgrange was built around 3200 BCE, making it older than Stonehenge and the Egyptian pyramids.</p>
+                </article>
+                <article>
+                    <span>06</span>
+                    <h3>Halloween beginnings</h3>
+                    <p>Halloween has roots in Samhain, an ancient Gaelic festival marking the start of winter.</p>
+                </article>
+                <article>
+                    <span>07</span>
+                    <h3>National symbol</h3>
+                    <p>The harp is Ireland's official national symbol and appears on government emblems and coins.</p>
+                </article>
+                <article>
+                    <span>08</span>
+                    <h3>Atlantic adventure</h3>
+                    <p>The Wild Atlantic Way follows roughly 2,500 kilometres of Ireland's dramatic western coastline.</p>
+                </article>
+                <article>
+                    <span>09</span>
+                    <h3>Musical tradition</h3>
+                    <p>Traditional Irish music often features the fiddle, tin whistle, bodhran, and uilleann pipes.</p>
+                </article>
+                <article>
+                    <span>10</span>
+                    <h3>Gaelic games</h3>
+                    <p>Hurling is one of the world's oldest field sports and is deeply woven into Irish community life.</p>
+                </article>
+                <article>
+                    <span>11</span>
+                    <h3>Literary giants</h3>
+                    <p>Ireland has produced four Nobel Prize winners in literature, including W. B. Yeats and Seamus Heaney.</p>
+                </article>
+                <article>
+                    <span>12</span>
+                    <h3>Fairy forts</h3>
+                    <p>Ancient ringforts are linked to Irish folklore and are traditionally treated with great respect.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="phrases-section" id="phrases" aria-labelledby="phrases-title">
+            <div class="phrases-heading">
+                <p class="eyebrow">Words worth remembering</p>
+                <h2 id="phrases-title">Famous Irish<br><em>quotes.</em></h2>
+                    <p class="phrases-note">Selected voices from Ireland's literary tradition</p>
+            </div>
+            <div class="phrases-list">
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>We are all in the gutter, but some of us are looking at the stars.</h3>
+                        <p>Oscar Wilde</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>In dreams begins the responsibility.</h3>
+                        <p>W. B. Yeats</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>Experience is simply the name we give our mistakes.</h3>
+                        <p>Oscar Wilde</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>The best way to make children good is to make them happy.</h3>
+                        <p>Oscar Wilde</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>Life isn't about finding yourself. Life is about creating yourself.</h3>
+                        <p>George Bernard Shaw</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>We are made wise not by the recollection of our past, but by the responsibility for our future.</h3>
+                        <p>George Bernard Shaw</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>There are far worse things awaiting man than death.</h3>
+                        <p>Bram Stoker</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>Think you're escaping and run into yourself.</h3>
+                        <p>James Joyce</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>The truth is rarely pure and never simple.</h3>
+                        <p>Oscar Wilde</p>
+                    </div>
+                </article>
+                <article>
+                    <span>“</span>
+                    <div>
+                        <h3>May you live all the days of your life.</h3>
+                        <p>Jonathan Swift</p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -138,4 +384,4 @@
 
     <footer><span>Made for wandering</span></footer>
 </body>
-</html>
+</html>u
